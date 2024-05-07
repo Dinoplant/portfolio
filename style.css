@@ -8,17 +8,80 @@ body {
     display: flex;
     flex-direction: column;  
   align-items: center;
-    
+
    color:white;
     background-color: black;  
+}
+
+header{
+    background-color: #B8B8B8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomHeaderButtons, .bottomHeaderButtons{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.myLogo{
+    margin: 10px;
+}
+
+.myLogo > img{
+width: 75px;
+height: 75px;
+}
+
+footer{
+    background-color: #B8B8B8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+background-color: white;
+border-radius: 10px;
+width: 100px;
+height: 35px;   
+}
+
+a{
+    font-size: 15px;
 }
 
 main{
     display: flex;
     flex-direction: column;   
     align-items: center; 
+    align-self: center;
+    width: 50%;
 }
 
 .twobox{
 display: flex;
+flex-direction: row;
+}
+
+.waveEffect{
+    /* background-image: url(/images/waveEffect.png); */
+    background-color: darkgreen;
+    width: 100%;
+}
+
+.imageBox>img{
+    height: 100px;
+    width: 100px;
+}
+
+.imageDisplay>img{
+    height: 120px;
+    width: 100px;
 }
