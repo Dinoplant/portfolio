@@ -24,7 +24,7 @@ header{
 .bottomHeaderButtons, .bottomHeaderButtons{
     width: 550px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     margin: 10px;
 }
@@ -42,7 +42,13 @@ footer{
     background-color: #B8B8B8;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerColumnsContact, .footerColumnsGithub, .footerColumnsGmail, .footerColumnsLinkedIn{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -65,15 +71,25 @@ main{
     width: 50%;
 }
 
+.textBox{
+color: black;
+    background-color: #1DFF4F;
+    box-shadow: 15px 15px #A30BC2 ;
+}
+
 .twobox{
 display: flex;
 flex-direction: row;
 }
 
 .waveEffect{
-    /* background-image: url(/images/waveEffect.png); */
-    background-color: darkgreen;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    background-image: url(/images/waveEffect.png);
+background-size: contain;
+    width: 2035px;
+    height: 1000px;
 }
 
 .imageBox>img{
