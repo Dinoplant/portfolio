@@ -11,22 +11,21 @@
 </head>
 
 <body>
-    <header>
+      <header>
         <section class="myLogo"> <img src="/images/A (3).png"> </section>
         <section class="headerButton">
             <section class="bottomHeaderButtons">
-                <button><a href="home.html">Home</a></button>
-                <button><a href="aboutMe.html">About Me</a></button>
-                <button><a href="gameDesign.html">Game Design</a></button>
-                <button><a href="thankYou.html">Contact</a></button>
+                <button onclick="changePage(`home.html`)">Home</button>
+                <button onclick="changePage(`aboutMe.html`)">About Me</button>
+                <button onclick="changePage(`gameDesign.html`)">Game Design</button>
+                <button onclick="changePage(`thankYou.html`)">Contact</button>
             </section>
             <section class="bottomHeaderButtons">
-                <button><a href="skills.html">Skills</a></button>
-                <button><a href="writing.html">Writing</a></button>
-                <button><a href="programming.html">Programming</a></button>
-                <button><a href="resume.html">Resume</a></button>
+                <button onclick="changePage(`skills.html`)">Skills</button>
+                <button onclick="changePage(`writing.html`)">Writing</button>
+                <button onclick="changePage(`programming.html`)">Programming</button>
+                <button onclick="changePage(`Resume.html`)">Resume</button>
             </section>
-        </section>
         </section>
     </header>
     <main>
@@ -46,7 +45,7 @@
                 <p>I have taken an AP English 11 course and I am very skilled in making stories with any level of
                     background information given to me. Along with making my own original stories and modifying existing
                     ones.</p>
-                <button><a href="writing.html">Writing</a></button>
+                <button onclick="changePage(`writing.html`)">Writing</button>
             </section>
             <section class="imageBox"> <img src="images/writing.png" alt="A paper a pencil"> </section>
 
@@ -59,7 +58,7 @@
                 <p>I am currently learning web design and computer programming in my CART class (Center for Advanced
                     Research and Technology). I am still learning JavaScript but I am very good at HTML and CSS. I also
                     know a limited amount of C# but I am trying to learn</p>
-                <button><a href="programming.html">Programming</a></button>
+                <button onclick="changePage(`programming.html`)">Programming</button>
             </section>
             <section class="imageBox"> <img src="/images/programming2.png" alt="Computer clipart"> </section>
         </section>
@@ -69,7 +68,7 @@
                 <p>Game Design is one of my better skills, for example I have made games in unity before and had made
                     games in game making tool kits. I know how to add balance for newer players yet add challenges and
                     mechanics so older players don't find it so easy or boring to play.</p>
-                <button><a href="gameDesign.html">Game Design</a></button>
+                <button onclick="changePage(`gameDesign.html`)">Game Design</button>
             </section>
             <section class="imageBox"> <img src="/images/gameDesign.png" alt="Controller clipart"> </section>
         </section>
@@ -81,7 +80,7 @@
                     love the art of game making and designing and am currently trying to make it my future
                     profession.
                 </p>
-                <button><a href="aboutMe.html">About Me</a> </button>
+                <button onclick="changePage(`aboutMe.html`)">About Me </button>
             </section>
             <section class="imageBox"><img src="/images/angelBush.jpg" alt="Me at Calpoly"> </section>
         </section>
@@ -106,7 +105,7 @@
                 <p>I am very good at Figma and wire framing websites. Some of my better skills are coding with HTML
                     and CSS along with writing stories. I also know about what goes into game design and when it
                     needs changes.</p>
-                <button><a href="skills.html">Skills</a> </button>
+                <button onclick="changePage(`skills.html`)">Skills</button>
             </section>
         </section>
         <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
@@ -128,7 +127,7 @@
                 <h3>Resume</h3>
                 <p>I have a resume which has my work experience, overall skills and my educational background. There is
                     a download link on the page with more information.</p>
-                <button><a href="resume.html">Resume</a> </button>
+                <button onclick="changePage(`resume.html`)">Resume</button>
             </section>
             <section class="imageBox"> <img src="/images/resume.png" alt="My resume"> </section>
         </section>
@@ -136,7 +135,7 @@
     <footer>
         <section class="footerColumnsContact">
             <section class="footerImages"> <img src="/images/webPage.png" alt="Webpage clipart"> </section>
-            <button class="footerButton"><a href="thankYou.html">Contact</a></button>
+            <button class="footerButton" onclick="changePage(`thankYou.html`)">Contact</button>
         </section>
         <section class="footerColumnsGithub">
             <section class="footerImages"> <img src="/images/github.png" alt="Github logo"></section>

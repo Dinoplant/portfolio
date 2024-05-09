@@ -12,25 +12,24 @@
 
 <body>
     <header>
-        <section class="myLogo"> <img src="/images/A (3).png" alt="My logo"> </section>
+        <section class="myLogo"> <img src="/images/A (3).png"> </section>
         <section class="headerButton">
             <section class="bottomHeaderButtons">
-                <button><a href="home.html">Home</a></button>
-                <button><a href="aboutMe.html">About Me</a></button>
-                <button><a href="gameDesign.html">Game Design</a></button>
-                <button><a href="thankYou.html">Contact</a></button>
+                <button onclick="changePage(`home.html`)">Home</button>
+                <button onclick="changePage(`aboutMe.html`)">About Me</button>
+                <button onclick="changePage(`gameDesign.html`)">Game Design</button>
+                <button onclick="changePage(`thankYou.html`)">Contact</button>
             </section>
             <section class="bottomHeaderButtons">
-                <button><a href="skills.html">Skills</a></button>
-                <button><a href="writing.html">Writing</a></button>
-                <button><a href="programming.html">Programming</a></button>
-                <button><a href="resume.html">Resume</a></button>
+                <button onclick="changePage(`skills.html`)">Skills</button>
+                <button onclick="changePage(`writing.html`)">Writing</button>
+                <button onclick="changePage(`programming.html`)">Programming</button>
+                <button onclick="changePage(`Resume.html`)">Resume</button>
             </section>
         </section>
-
     </header>
     <main>
-        <section class="onebox resumeOverview">
+        <section class="onebox overview">
             <section class="textBox">
                 Below is my resume that has my skills, my experience, and additional information which you can view at
                 your
@@ -134,7 +133,7 @@
     <footer>
         <section class="footerColumnsContact">
             <section class="footerImages"> <img src="/images/webPage.png" alt="Webpage clipart"> </section>
-            <button class="footerButton"><a href="thankYou.html">Contact</a></button>
+            <button class="footerButton" onclick="changePage(`thankYou.html`)">Contact</button>
         </section>
         <section class="footerColumnsGithub">
             <section class="footerImages"> <img src="/images/github.png" alt="Github logo"></section>

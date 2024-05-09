@@ -23,8 +23,14 @@ body {
 }
 
 
-h1,h2,h3,h4,h5,h6,button{
-    font-family: "PT Serif", serif; 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: "PT Serif", serif;
     font-size: 1.3em;
 }
 
@@ -34,6 +40,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .bottomHeaderButtons,
@@ -87,6 +94,7 @@ button {
     border-radius: 10px;
     width: 100px;
     height: 35px;
+    font-size: small;
 }
 
 a {
@@ -152,6 +160,7 @@ main {
     height: 100px;
     width: 100px;
 }
+
 .welcomeBox>.imageBox>img {
     height: 160px;
     width: 110px;
@@ -209,6 +218,150 @@ main {
 
 .aboutBox>.imageBox {
     margin-left: 35px;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+
+.programmingSkillBox>.buttonBox>button,
+.gameDesignSkillBox>.buttonBox>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 10vw;
+    height: 6vh;
+    font-size: large;
+}
+
+.writingSkillBox {
+    width: 758px;
+}
+
+.writingExampleReady,
+.writingExampleLouie {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+.writingSkillBox>.buttonBox>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 10vw;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    font-size: large;
+}
+
+.gameDesignSkillBox {
+    display: flex;
+    justify-content: center;
+}
+
+.marioBefore {
+    width: 63vw;
+    height: 34vh;
+    background-size: cover;
+    background-image: url(/images/marioBefore.png);
+}
+
+.marioAfter {
+    width: 63vw;
+    height: 34vh;
+    background-size: cover;
+    background-image: url(/images/marioAfter.png);
+}
+
+.js {
+    background-size: cover;
+    background-image: url(/images/js.png);
+}
+
+.html {
+    background-size: cover;
+    background-image: url(/images/html.png);
+}
+
+.css {
+    background-size: cover;
+    background-image: url(/images/css.png);
+}
+
+.codeImages {
+    width: 20vw;
+    height: 38vh;
+}
+
+
+.JPABox,
+.EECUBox,
+.KnightBox,
+.DinoBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.JPABox>.imageBox,
+.EECUBox>.imageBox,
+.KnightBox>.imageBox,
+.DinoBox>.imageBox {
+    margin-top: 30px;
+}
+
+.JPABox>.imageBox>img {
+    height: 49vh;
+    width: 49vw;
+}
+
+.EECUBox>.imageBox>img {
+    height: 49vh;
+    width: 49vw;
+}
+
+.KnightBox>.imageBox>img {
+    height: 45vh;
+    width: 45vw;
+}
+
+.DinoBox>.imageBox>img {
+    height: 45vh;
+    width: 45vw;
+}
+
+.thankYouButtons{
+    height: 160px;
+    width: 550px;
+    background-color: #1DFF4F;
+    box-shadow: 15px 15px #A30BC2;
+}
+
+.thankYou{
+    display: flex;
+    flex-direction: column;
+}
+
+.thankYouButtons>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 10vw;
+    height: 6vh;
+    font-size: large;
+}
+
+.aboutMeBox{
+    display: flex;
+    justify-content: center;
 }
 
 .waveEffect {

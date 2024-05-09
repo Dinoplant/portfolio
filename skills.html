@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <link rel="icon" type="image/x-icon" href="/images/A (3).png">
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 </head>
 
 <body>
     <header>
-        <section class="myLogo"> <img href="/images/A (3).png"> </section>
+        <section class="myLogo"> <img src="/images/A (3).png"> </section>
         <section class="headerButton">
             <section class="bottomHeaderButtons">
-                <button><a href="home.html">Home</a></button>
-                <button><a href="aboutMe.html">About Me</a></button>
-                <button><a href="gameDesign.html">Game Design</a></button>
-                <button><a href="thankYou.html">Contact</a></button>
+                <button onclick="changePage(`home.html`)">Home</button>
+                <button onclick="changePage(`aboutMe.html`)">About Me</button>
+                <button onclick="changePage(`gameDesign.html`)">Game Design</button>
+                <button onclick="changePage(`thankYou.html`)">Contact</button>
             </section>
             <section class="bottomHeaderButtons">
-                <button><a href="skills.html">Skills</a></button>
-                <button><a href="writing.html">Writing</a></button>
-                <button><a href="programming.html">Programming</a></button>
-                <button><a href="resume.html">Resume</a></button>
+                <button onclick="changePage(`skills.html`)">Skills</button>
+                <button onclick="changePage(`writing.html`)">Writing</button>
+                <button onclick="changePage(`programming.html`)">Programming</button>
+                <button onclick="changePage(`Resume.html`)">Resume</button>
             </section>
-        </section>
         </section>
     </header>
     <main>
@@ -46,62 +45,62 @@
                 <p>Getting better at this skill everyday and eventually want to master this skill in some of the
                     languages.</p>
             </section>
-            <section class="buttonBox"> <button><a href="programming.html">Programming</a></button></section>
+            <section class="buttonBox"> <button onclick="changePage(`programming.html`)">Programming</button></section>
         </section>
-        </main>
-        <section class="waveEffect">
-            <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                        <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
-                        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                    d="M0,88L34.3,73.3C68.6,59,137,29,206,33C274.3,37,343,73,411,106.3C480,139,549,169,617,176C685.7,183,754,169,823,154C891.4,139,960,125,1029,132C1097.1,139,1166,169,1234,179.7C1302.9,191,1371,183,1440,161.3C1508.6,139,1577,103,1646,77C1714.3,51,1783,37,1851,58.7C1920,81,1989,139,2057,165C2125.7,191,2194,183,2263,183.3C2331.4,183,2400,191,2469,176C2537.1,161,2606,125,2674,102.7C2742.9,81,2811,73,2880,62.3C2948.6,51,3017,37,3086,47.7C3154.3,59,3223,95,3291,99C3360,103,3429,73,3497,66C3565.7,59,3634,73,3703,95.3C3771.4,117,3840,147,3909,150.3C3977.1,154,4046,132,4114,124.7C4182.9,117,4251,125,4320,113.7C4388.6,103,4457,73,4526,55C4594.3,37,4663,29,4731,36.7C4800,44,4869,66,4903,77L4937.1,88L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z">
-                </path>
-            </svg>
-            <section class="twobox writingSkillBox">
+    </main>
+    <section class="waveEffect">
+        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,88L34.3,73.3C68.6,59,137,29,206,33C274.3,37,343,73,411,106.3C480,139,549,169,617,176C685.7,183,754,169,823,154C891.4,139,960,125,1029,132C1097.1,139,1166,169,1234,179.7C1302.9,191,1371,183,1440,161.3C1508.6,139,1577,103,1646,77C1714.3,51,1783,37,1851,58.7C1920,81,1989,139,2057,165C2125.7,191,2194,183,2263,183.3C2331.4,183,2400,191,2469,176C2537.1,161,2606,125,2674,102.7C2742.9,81,2811,73,2880,62.3C2948.6,51,3017,37,3086,47.7C3154.3,59,3223,95,3291,99C3360,103,3429,73,3497,66C3565.7,59,3634,73,3703,95.3C3771.4,117,3840,147,3909,150.3C3977.1,154,4046,132,4114,124.7C4182.9,117,4251,125,4320,113.7C4388.6,103,4457,73,4526,55C4594.3,37,4663,29,4731,36.7C4800,44,4869,66,4903,77L4937.1,88L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z">
+            </path>
+        </svg>
+        <section class="twobox writingSkillBox">
 
-                <section class="textBox">
-                    <h3>Writing</h3>
-                    <p>Getting better at storytelling and telling my main points. Always trying to get better with
-                        my words.</p>
+            <section class="textBox">
+                <h3>Writing</h3>
+                <p>Getting better at storytelling and telling my main points. Always trying to get better with
+                    my words.</p>
 
-                </section>
-                <section class="buttonBox">
-                    <button><a href="writing.html">Writing</a> </button>
-                </section>
             </section>
-            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                        <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
-                        <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
-                    </linearGradient>
-                </defs>
-                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                    d="M0,176L34.3,157.7C68.6,139,137,103,206,102.7C274.3,103,343,139,411,161.3C480,183,549,191,617,183.3C685.7,176,754,154,823,124.7C891.4,95,960,59,1029,36.7C1097.1,15,1166,7,1234,14.7C1302.9,22,1371,44,1440,55C1508.6,66,1577,66,1646,77C1714.3,88,1783,110,1851,113.7C1920,117,1989,103,2057,102.7C2125.7,103,2194,117,2263,121C2331.4,125,2400,117,2469,117.3C2537.1,117,2606,125,2674,110C2742.9,95,2811,59,2880,40.3C2948.6,22,3017,22,3086,22C3154.3,22,3223,22,3291,25.7C3360,29,3429,37,3497,51.3C3565.7,66,3634,88,3703,99C3771.4,110,3840,110,3909,113.7C3977.1,117,4046,125,4114,117.3C4182.9,110,4251,88,4320,66C4388.6,44,4457,22,4526,36.7C4594.3,51,4663,103,4731,102.7C4800,103,4869,51,4903,25.7L4937.1,0L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z">
-                </path>
-            </svg>
-
+            <section class="buttonBox">
+                <button onclick="changePage(`writing.html`)">Writing</button>
+            </section>
         </section>
-        <main>
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,176L34.3,157.7C68.6,139,137,103,206,102.7C274.3,103,343,139,411,161.3C480,183,549,191,617,183.3C685.7,176,754,154,823,124.7C891.4,95,960,59,1029,36.7C1097.1,15,1166,7,1234,14.7C1302.9,22,1371,44,1440,55C1508.6,66,1577,66,1646,77C1714.3,88,1783,110,1851,113.7C1920,117,1989,103,2057,102.7C2125.7,103,2194,117,2263,121C2331.4,125,2400,117,2469,117.3C2537.1,117,2606,125,2674,110C2742.9,95,2811,59,2880,40.3C2948.6,22,3017,22,3086,22C3154.3,22,3223,22,3291,25.7C3360,29,3429,37,3497,51.3C3565.7,66,3634,88,3703,99C3771.4,110,3840,110,3909,113.7C3977.1,117,4046,125,4114,117.3C4182.9,110,4251,88,4320,66C4388.6,44,4457,22,4526,36.7C4594.3,51,4663,103,4731,102.7C4800,103,4869,51,4903,25.7L4937.1,0L4937.1,220L4902.9,220C4868.6,220,4800,220,4731,220C4662.9,220,4594,220,4526,220C4457.1,220,4389,220,4320,220C4251.4,220,4183,220,4114,220C4045.7,220,3977,220,3909,220C3840,220,3771,220,3703,220C3634.3,220,3566,220,3497,220C3428.6,220,3360,220,3291,220C3222.9,220,3154,220,3086,220C3017.1,220,2949,220,2880,220C2811.4,220,2743,220,2674,220C2605.7,220,2537,220,2469,220C2400,220,2331,220,2263,220C2194.3,220,2126,220,2057,220C1988.6,220,1920,220,1851,220C1782.9,220,1714,220,1646,220C1577.1,220,1509,220,1440,220C1371.4,220,1303,220,1234,220C1165.7,220,1097,220,1029,220C960,220,891,220,823,220C754.3,220,686,220,617,220C548.6,220,480,220,411,220C342.9,220,274,220,206,220C137.1,220,69,220,34,220L0,220Z">
+            </path>
+        </svg>
+
+    </section>
+    <main>
         <section class="twobox gameDesignSkillBox">
             <section class="textBox">
                 <h3>gameDesign</h3>
                 <p>Finding and fixing game play is enjoyable to me. I enjoy making improvements and adding more gameplay
                     in fun ways.</p>
             </section>
-            <section class="buttonBox"> <button><a href="gameDesign.html">GameDesign</a> </button></section>
+            <section class="buttonBox"><button onclick="changePage(`gameDesign.html`)">Game Design</button></section>
         </section>
     </main>
     <footer>
         <section class="footerColumnsContact">
             <section class="footerImages"> <img src="/images/webPage.png" alt="Webpage clipart"> </section>
-            <button class="footerButton"><a href="thankYou.html">Contact</a></button>
+            <button class="footerButton" onclick="changePage(`thankYou.html`)">Contact</button>
         </section>
         <section class="footerColumnsGithub">
             <section class="footerImages"> <img src="/images/github.png" alt="Github logo"></section>
