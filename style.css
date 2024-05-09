@@ -262,6 +262,17 @@ main {
     font-size: large;
 }
 
+.whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whole>button{
+width: 20vw;
+height: 20vh;
+}
+
 .gameDesignSkillBox {
     display: flex;
     justify-content: center;
@@ -283,7 +294,8 @@ main {
 
 .js {
     background-size: cover;
-    background-image: url(/images/js.png);
+    /* background-image: url(/images/js.png); */
+    background-image: url(/images/snapedit_1715294495693-removebg-preview.png);
 }
 
 .html {
@@ -297,8 +309,8 @@ main {
 }
 
 .codeImages {
-    width: 20vw;
-    height: 38vh;
+    width: 435px;
+    height: 500px;
 }
 
 
@@ -338,8 +350,10 @@ main {
 }
 
 .thankYouButtons{
-    height: 160px;
-    width: 550px;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+    width: 640px;
     background-color: #1DFF4F;
     box-shadow: 15px 15px #A30BC2;
 }
@@ -353,7 +367,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50px;
+    align-self: center;
     width: 10vw;
     height: 6vh;
     font-size: large;
