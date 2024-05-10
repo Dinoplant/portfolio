@@ -109,7 +109,7 @@ main {
     width: 50%;
 }
 
-.textBox {
+.textBox, .forumSubmit {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -267,10 +267,11 @@ main {
     flex-direction: column;
     align-items: center;
 }
-
 .whole>button {
-    width: 20vw;
-    height: 20vh;
+    width: 15vw;
+    font-size: larger;
+    height: 7vh;
+    margin-top: 30px;
 }
 
 .gameDesignSkillBox {
@@ -373,6 +374,34 @@ main {
     font-size: large;
 }
 
+.forumSubmit>form>p {
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-evenly;
+}
+
+input[type="text"], input[type="email"] {
+    width: 190px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+.forumSubmit>h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+textarea{
+    max-width: 454px;
+    max-height: 110px;
+    min-width: 130px;
+    min-height: 20px;
+}
+
 .aboutMeBox {
     display: flex;
     justify-content: center;
@@ -452,7 +481,9 @@ ul {
     border-left: 1px white solid;
 }
 
-
+button:hover{
+    
+}
 
 .waveEffect {
     display: flex;
