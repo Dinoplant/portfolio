@@ -279,18 +279,25 @@ main {
     justify-content: center;
 }
 
-.marioBefore {
-    width: 63vw;
-    height: 34vh;
+.mario-Cliff {
+    width: 60.7vw;
+    height: 56vh;
     background-size: cover;
-    background-image: url(/images/marioBefore.png);
+    background-image: url(/images/mario-cliffs.jpg);
 }
 
-.marioAfter {
-    width: 63vw;
-    height: 34vh;
+.mario-Block {
+    width: 60.7vw;
+    height: 56vh;
     background-size: cover;
-    background-image: url(/images/marioAfter.png);
+    background-image: url(/images/mario-block.jpg);
+}
+
+.mario-Blank{
+    width: 60.7vw;
+    height: 56vh;
+    background-size: cover;
+    background-image: url(/images/mario-blank.jpg);
 }
 
 .js {
