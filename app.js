@@ -1,4 +1,4 @@
-let gDNumber = 1
+let gDNumber = 2
 let imageNumber = 0
 
 function changePage(page) {

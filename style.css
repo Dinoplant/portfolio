@@ -280,22 +280,22 @@ main {
 }
 
 .mario-Cliff {
-    width: 60.7vw;
-    height: 56vh;
+    width: 1035px;
+    height: 581px;
     background-size: cover;
     background-image: url(/images/mario-cliffs.jpg);
 }
 
 .mario-Block {
-    width: 60.7vw;
-    height: 56vh;
+    width: 1035px;
+    height: 581px;
     background-size: cover;
     background-image: url(/images/mario-block.jpg);
 }
 
 .mario-Blank{
-    width: 60.7vw;
-    height: 56vh;
+    width: 1035px;
+    height: 581px;
     background-size: cover;
     background-image: url(/images/mario-blank.jpg);
 }
@@ -511,4 +511,8 @@ button:hover{
 .imageDisplay>img {
     height: 42vh;
     width: 19vw;
+}
+
+.wholeImageDisplay{
+    display: flex;
 }
