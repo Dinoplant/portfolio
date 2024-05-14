@@ -284,30 +284,45 @@ main {
     justify-content: center;
 }
 
-.mario-Cliff {
+.gameDesignSlides{
     width: 1035px;
-    height: 581px;
+    height: 581px; 
+}
+
+.mario-Cliff {
     background-size: cover;
     background-image: url(/images/mario-cliffs.jpg);
 }
 
 .mario-Block {
-    width: 1035px;
-    height: 581px;
     background-size: cover;
     background-image: url(/images/mario-block.jpg);
 }
 
 .mario-Blank {
-    width: 1035px;
-    height: 581px;
     background-size: cover;
     background-image: url(/images/mario-blank.jpg);
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+   
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .js {
     background-size: cover;
-    /* background-image: url(/images/js.png); */
     background-image: url(/images/snapedit_1715294495693-removebg-preview.png);
 }
 
@@ -330,7 +345,6 @@ main {
     width: 435px;
     height: 500px;
 }
-
 
 .JPABox,
 .EECUBox,
@@ -420,6 +434,30 @@ textarea {
     min-height: 20px;
 }
 
+.slideshowHolder {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
 .aboutMeBox {
     display: flex;
     justify-content: center;
@@ -468,7 +506,7 @@ ul {
     padding: 10px;
     height: 65%;
     padding: 10px;
-    height: 66.4%;
+    height: 60.4%;
     background-color: #242424;
 }
 

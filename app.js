@@ -48,18 +48,21 @@ function gameDesignImages (){
             gameDesignExampleId.className = ``
             gameDesignExampleId.classList.add(`gameDesignExample`);
             gameDesignExampleId.classList.add(`mario-Blank`);
+            gameDesignExampleId.classList.add(`fade`);
             gDNumber++
             break;
         case 2:
             gameDesignExampleId.className = ``
             gameDesignExampleId.classList.add(`gameDesignExample`);
             gameDesignExampleId.classList.add(`mario-Block`);
+            gameDesignExampleId.classList.add(`fade`);
             gDNumber++
             break;
         case 3:
             gameDesignExampleId.className = ``
             gameDesignExampleId.classList.add(`gameDesignExample`);
             gameDesignExampleId.classList.add(`mario-Cliff`);
+            gameDesignExampleId.classList.add(`fade`);
             gDNumber = 1
             break;
         default:

@@ -56,11 +56,23 @@
             </path>
         </svg>
 
-        <section class="whole">
-            <section id="gameDesignExampleId" class="gameDesignExample, mario-Blank">
+        <div class="gameDesignSlides">
 
-            </section>
-            <button onclick="gameDesignImages()">Change the Level</button>
+            <div class="slides fade">
+                <img src="images/mario-blank.jpg" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/mario-block.jpg" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="images/mario-cliffs.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <section class="whole">
+            <button onclick="showSlides()">Change the Level</button>
         </section>
 
         <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
@@ -102,6 +114,22 @@
                 onclick="changePage(`https://www.linkedin.com/in/angel-delgado-jimenez-41a330307/`)">LinkedIn</button>
         </section>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+        }
+        </script>
 </body>
 
 </html>
