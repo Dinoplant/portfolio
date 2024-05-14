@@ -1,6 +1,6 @@
 let gDNumber = 2
 let imageNumber = 0
-
+let slideNumber = 1;
 function changePage(page) {
     location.href = page
 }
@@ -65,6 +65,4 @@ function gameDesignImages (){
         default:
             console.log(`sorry no work`);
     }
-
-
 }

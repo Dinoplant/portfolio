@@ -22,6 +22,9 @@ body {
     background-color: black;
 }
 
+button:hover{
+    cursor: pointer;
+}
 
 h1,
 h2,
@@ -109,7 +112,8 @@ main {
     width: 50%;
 }
 
-.textBox, .forumSubmit {
+.textBox,
+.forumSubmit {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -267,6 +271,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
 .whole>button {
     width: 15vw;
     font-size: larger;
@@ -293,7 +298,7 @@ main {
     background-image: url(/images/mario-block.jpg);
 }
 
-.mario-Blank{
+.mario-Blank {
     width: 1035px;
     height: 581px;
     background-size: cover;
@@ -316,7 +321,7 @@ main {
     background-image: url(/images/css.png);
 }
 
-.trio{
+.trio {
     background-size: cover;
     background-image: url(/images/trio.png);
 }
@@ -392,7 +397,8 @@ main {
     justify-content: space-evenly;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
     width: 190px;
 }
 
@@ -401,13 +407,13 @@ label {
     align-items: center;
 }
 
-.forumSubmit>h3{
+.forumSubmit>h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
 
-textarea{
+textarea {
     max-width: 454px;
     max-height: 110px;
     min-width: 130px;
@@ -419,7 +425,7 @@ textarea{
     justify-content: center;
 }
 
-.pdf{
+.pdf {
     width: 30vw;
     height: 58vh;
 }
@@ -493,7 +499,7 @@ ul {
     border-left: 1px white solid;
 }
 
-button:hover{
+button:hover {
     border: solid 3px rgb(144, 0, 255);
 }
 
@@ -513,6 +519,6 @@ button:hover{
     width: 19vw;
 }
 
-.wholeImageDisplay{
+.wholeImageDisplay {
     display: flex;
 }
