@@ -123,6 +123,9 @@ main {
     padding: 10px;
 }
 
+.forumSubmit {
+    margin-bottom: 30px;
+}
 
 .twobox,
 .onebox {
@@ -696,6 +699,10 @@ button:hover {
         left: 55%;
         top: 50%;
 
+    }
+
+    main{
+        width: 80%;
     }
 }
 

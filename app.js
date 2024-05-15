@@ -4,7 +4,12 @@ let slideNumber = 1;
 
 
 function changePage(page) {
-    location.href = page
+    location.href = page   
+}
+
+function openLink(websiteLink) {
+  window.open(websiteLink, '_blank').focus();
+    
 }
 
 function imageChanger() {
