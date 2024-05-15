@@ -55,26 +55,33 @@
                 d="M0,132L30,117.3C60,103,120,73,180,66C240,59,300,73,360,80.7C420,88,480,88,540,84.3C600,81,660,73,720,58.7C780,44,840,22,900,29.3C960,37,1020,73,1080,77C1140,81,1200,51,1260,55C1320,59,1380,95,1440,91.7C1500,88,1560,44,1620,22C1680,0,1740,0,1800,18.3C1860,37,1920,73,1980,95.3C2040,117,2100,125,2160,139.3C2220,154,2280,176,2340,183.3C2400,191,2460,183,2520,176C2580,169,2640,161,2700,161.3C2760,161,2820,169,2880,172.3C2940,176,3000,176,3060,172.3C3120,169,3180,161,3240,132C3300,103,3360,51,3420,29.3C3480,7,3540,15,3600,36.7C3660,59,3720,95,3780,110C3840,125,3900,117,3960,102.7C4020,88,4080,66,4140,58.7C4200,51,4260,59,4290,62.3L4320,66L4320,220L4290,220C4260,220,4200,220,4140,220C4080,220,4020,220,3960,220C3900,220,3840,220,3780,220C3720,220,3660,220,3600,220C3540,220,3480,220,3420,220C3360,220,3300,220,3240,220C3180,220,3120,220,3060,220C3000,220,2940,220,2880,220C2820,220,2760,220,2700,220C2640,220,2580,220,2520,220C2460,220,2400,220,2340,220C2280,220,2220,220,2160,220C2100,220,2040,220,1980,220C1920,220,1860,220,1800,220C1740,220,1680,220,1620,220C1560,220,1500,220,1440,220C1380,220,1320,220,1260,220C1200,220,1140,220,1080,220C1020,220,960,220,900,220C840,220,780,220,720,220C660,220,600,220,540,220C480,220,420,220,360,220C300,220,240,220,180,220C120,220,60,220,30,220L0,220Z">
             </path>
         </svg>
-
-        <div class="gameDesignSlides">
-
-            <div class="slides fade">
-                <img src="images/mario-blank.jpg" style="width:100%">
+<section class="slidingHolder">
+        <section class="wrapper">
+            <div class="bottom">
+              <img src="/images/mario-blank.jpg" draggable="false" />
             </div>
-
-            <div class="slides fade">
-                <img src="images/mario-block.jpg" style="width:100%">
+            <div class="middle">
+                <img src="images/mario-block.jpg" draggable="false" />
             </div>
-
-            <div class="slides fade">
-                <img src="images/mario-cliffs.jpg" style="width:100%">
+            <div class="scroller scroller-middle">
+                <svg class="scroller__keeper" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                    viewBox="0 0 100 100">
+                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#000000" />
+                    <polygon points="100 50 64 32 64 68 100 50" style="fill:#000000" />
+                </svg>
             </div>
-        </div>
-
-        <section class="whole">
-            <button onclick="showSlides()">Change the Level</button>
+            <div class="top">
+                  <img src="images/mario-cliffs.jpg" draggable="false" />
+            </div>
+            <div class="scroller scroller-top">
+                <svg class="scroller__keeper" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+                    viewBox="0 0 100 100">
+                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#000000" />
+                    <polygon points="100 50 64 32 64 68 100 50" style="fill:#000000" />
+                </svg>
+            </div>
         </section>
-
+</section>
         <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1"
             xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -115,21 +122,105 @@
         </section>
     </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+    <script>
+
+        let scrollerMiddle = document.querySelector('.scroller-middle');
+        let scrollerTop = document.querySelector('.scroller-top');
+
+        scrollerMiddle.addEventListener('mousedown', function () {
+            active = "middle";
+            scrollerMiddle.classList.add('scrolling');
+        });
+        document.body.addEventListener('mouseup', function () {
+            active = false;
+            scrollerMiddle.classList.remove('scrolling');
+        });
+        document.body.addEventListener('mouseleave', function () {
+            active = false;
+            scrollerMiddle.classList.remove('scrolling');
+        });
+        scrollerTop.addEventListener('mousedown', function () {
+            active = "top";
+            scrollerTop.classList.add('scrolling');
+        });
+        document.body.addEventListener('mouseup', function () {
+            active = false;
+            scrollerTop.classList.remove('scrolling');
+        });
+        document.body.addEventListener('mouseleave', function () {
+            active = false;
+            scrollerTop.classList.remove('scrolling');
+        });
+
+        // Mouse finder
+        document.body.addEventListener('mousemove', function (e) {
+            if (!active) return;
+            let x = e.pageX;
+            x -= document.querySelector('.wrapper').getBoundingClientRect().left;
+            scrollIt(x);
+        });
+
+        function scrollIt(x) {
+            let transform = Math.max(0, (Math.min(x, document.querySelector('.wrapper').offsetWidth)));
+            if (active === "middle") {
+                document.querySelector('.middle').style.width = transform + "px";
+                scrollerMiddle.style.left = transform - 25 + "px";
+                if (scrollerTop.getBoundingClientRect().left > scrollerMiddle.getBoundingClientRect().left - 5) {
+                    document.querySelector('.top').style.width = transform - 5 + "px";
+                    scrollerTop.style.left = transform - 30 + "px";
+                }
             }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            slides[slideIndex - 1].style.display = "block";
+            if (active === "top") {
+                document.querySelector('.top').style.width = transform + "px";
+                scrollerTop.style.left = transform - 25 + "px";
+                if (scrollerTop.getBoundingClientRect().left > scrollerMiddle.getBoundingClientRect().left - 5) {
+                    document.querySelector('.middle').style.width = transform + 5 + "px";
+                    scrollerMiddle.style.left = transform - 20 + "px";
+                }
+            }
         }
-        </script>
+
+        active = "middle";
+        scrollIt(460);
+        active = "top";
+        scrollIt(230);
+        active = false;
+
+
+        scrollerMiddle.addEventListener('touchstart', function () {
+            active = "middle";
+            scrollerMiddle.classList.add('scrolling');
+        });
+        document.body.addEventListener('touchend', function () {
+            active = false;
+            scrollerMiddle.classList.remove('scrolling');
+        });
+        document.body.addEventListener('touchcancel', function () {
+            active = false;
+            scrollerMiddle.classList.remove('scrolling');
+        });
+        scrollerTop.addEventListener('touchstart', function () {
+            active = "top";
+            scrollerTop.classList.add('scrolling');
+        });
+        document.body.addEventListener('touchend', function () {
+            active = false;
+            scrollerTop.classList.remove('scrolling');
+        });
+        document.body.addEventListener('touchcancel', function () {
+            active = false;
+            scrollerTop.classList.remove('scrolling');
+        });
+        document.querySelector('.wrapper').addEventListener('touchmove', function (e) {
+            if (!active) return;
+            e.preventDefault();
+            let x = e.touches[0].pageX;
+            x -= document.querySelector('.wrapper').getBoundingClientRect().left;
+            scrollIt(x);
+        });
+    </script>
+
 </body>
 
 </html>
