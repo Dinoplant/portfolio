@@ -77,6 +77,5 @@ function gameDesignImages (){
     }
 }
 
-
 let active = false;
 

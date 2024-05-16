@@ -142,6 +142,12 @@ main {
     width: 50%;
 }
 
+.skillMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .twoboxRev {
     display: flex;
     flex-direction: row-reverse;
@@ -247,7 +253,9 @@ main {
 }
 
 .writingSkillBox {
+    display: flex;
     width: 758px;
+    justify-content: center;
 }
 
 .writingExampleReady,
@@ -282,7 +290,8 @@ main {
     margin-top: 30px;
 }
 
-.gameDesignSkillBox {
+.gameDesignSkillBox,
+.programmingSkillBox {
     display: flex;
     justify-content: center;
 }
@@ -466,6 +475,11 @@ img {
     justify-content: center;
 }
 
+.pdfResume {
+    width: 30vw;
+    height: 58vh;
+}
+
 .pdf {
     width: 30vw;
     height: 58vh;
@@ -552,7 +566,7 @@ button:hover {
     background-size: contain;
     width: 100%;
     height: 100%;
-    box-shadow: inset 0px 2px black;
+    box-shadow: inset 0px 4px black;
 }
 
 .imageDisplay>img {
@@ -565,6 +579,29 @@ button:hover {
 }
 
 
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
 
 /* three way slider */
 
@@ -692,6 +729,8 @@ button:hover {
     background: #d3d3d3;
 }
 
+
+
 @media (width <=1100px) {
     .wrapper {
         width: 935px;
@@ -701,17 +740,213 @@ button:hover {
 
     }
 
-    main{
-        width: 80%;
+    .slidingHolder {
+        width: 690px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .programmingSkillBox>.buttonBox>button,
+    .gameDesignSkillBox>.buttonBox>button {
+        width: 13vw;
+    }
+
+    .skillBox {
+        width: 90%;
+    }
+
+    .thankYouButtons {
+        height: 20vh;
+        width: 35vw;
+    }
+
+    .pdfResume {
+        display: none;
     }
 }
 
 @media (width <=930px) {
 
+
     .wrapper {
         width: 835px;
         height: 381px;
-        left: 59%;
+        left: 52%;
         top: 50%;
+    }
+}
+
+@media (width <=800px) {
+
+    .programmingSkillBox>.buttonBox>button,
+    .gameDesignSkillBox>.buttonBox>button,
+    .writingSkillBox>.buttonBox>button {
+        width: 15vw;
+    }
+
+    .thankYouButtons {
+        height: 20vh;
+        width: 55%;
+    }
+
+    .thankYouButtons>button {
+        width: 16vw;
+    }
+
+}
+
+@media (width <=667px) {
+    .textBox {
+        width: 55%;
+    }
+
+    .JPABox>.imageBox,
+    .EECUBox>.imageBox,
+    .KnightBox>.imageBox,
+    .DinoBox>.imageBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .programmingSkillBox>.buttonBox>button,
+    .gameDesignSkillBox>.buttonBox>button,
+    .writingSkillBox>.buttonBox>button {
+        width: 20vw;
+    }
+
+    .thankYouButtons>button {
+        width: 20vw;
+    }
+
+    header{
+        width: 100%;
+    }
+    .headerButton {
+        width: 100%;
+    }
+
+    .bottomHeaderButtons,
+    .bottomHeaderButtons {
+        width: 100%;
+    }
+ .myLogo {
+        display: none;
+    }
+    .bottomHeaderButtons>button,
+    .topHeaderButtons>button {
+        width: 50%;
+        scale: .7;
+
+    } .textBox {
+        width: 75%;
+    }
+    .programmingSkillBox>.buttonBox>button,
+    .gameDesignSkillBox>.buttonBox>button,
+    .writingSkillBox>.buttonBox>button {
+        width: 36vw;
+    }
+
+
+   
+
+    .writingSkillBox {
+        width: 102%;
+    }
+
+    .buttonBox {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .writingExampleReady,
+    .writingExampleLouie {
+        width: 150%;
+    }
+
+}
+
+@media (width <=430px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+
+    }
+
+    .twobox,
+    .twoboxRev {
+        flex-direction: column;
+    }
+
+
+    .wrapper {
+        left: 50%;
+        width: 656px;
+    }
+
+    .gDWE {
+        display: none
+    }
+
+    header {
+        width: 100%;
+    }
+
+    p {
+        font-size: smaller;
+    }
+    .textBox {
+        width: 55%;
+    }
+   
+
+    .bottomHeaderButtons>button,
+    .topHeaderButtons>button {
+        width: 50%;
+        scale: .7;
+
+    }
+
+    .noncollapse {
+        display: none;
+    }
+
+    .headerButton {
+        width: 100%;
+    }
+
+    .bottomHeaderButtons,
+    .bottomHeaderButtons {
+        width: 100%;
+    }
+
+
+    .JPABox>.imageBox,
+    .EECUBox>.imageBox,
+    .KnightBox>.imageBox,
+    .DinoBox>.imageBox {
+        display: flex;
+        justify-content: center;
+    }
+    .JPABox>.imageBox>img,
+    .EECUBox>.imageBox>img,
+    .KnightBox>.imageBox>img,
+    .DinoBox>.imageBox>img {
+        width: 100%;
+        height: 100%;
+    }
+    .JPABox>.textBox,
+    .EECUBox>.textBox,
+    .KnightBox>.textBox,
+    .DinoBox>.textBox {
+        width: 85%;
+        height: 85%;
+    }
+    .thankYou>.textBox{
+        width: 85%;
     }
 }
